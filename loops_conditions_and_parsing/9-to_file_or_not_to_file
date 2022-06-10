@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# # displays content of the current working directory
+# check the school
 
 file="school"
 if [ -a "$file" ]
