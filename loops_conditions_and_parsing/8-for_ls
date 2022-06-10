@@ -1,21 +1,29 @@
 #!/usr/bin/env bash
-# # displays content of the current working directory
+# displays the content of current working directory
 
-file="school"
-if [ -a "$file" ]
-then
-	echo "school file exists"
-	if [ ! -s "$file" ]
-	then		
-		echo "school file is empty"
-	else
-		echo "chool file is not empty"
-	fi	
-	if [ -f "$file ]
-	then	
-		echo "school is a regular file"
-	fi
-else
-	echo "school file does not exist"	
-fi
+LIST="$(ls)"
+
+for i in $LIST	
+do
+	echo "$i" | cut -d "-" -f 2-
+done
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
